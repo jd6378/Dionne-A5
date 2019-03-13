@@ -219,7 +219,7 @@ function clearSongs (req, res)
     }
 }
 
-function writeResult(res, obj)
+function writeResult(req, res, obj)
 {
   res.writeHead(200, {'Content-Type': 'application/json'});
   res.write(JSON.stringify(obj));
